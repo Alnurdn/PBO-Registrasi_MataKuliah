@@ -14,13 +14,13 @@ package tubesss;
 public class Kelas {
     private MataKuliah matakuliah;
     private Dosen dosen;
-    private int sks;
+    private int jadwal;
     private String namaKelas;
     private int maxMahasiswa;
     
-    public Kelas (MataKuliah matakuliah,int sks, Dosen dosen) {
+    public Kelas (MataKuliah matakuliah, Dosen dosen,int jadwal) {
         this.matakuliah = matakuliah;
-        this.sks = sks;
+        this.jadwal = jadwal;
         this.dosen = dosen;
     }
     
@@ -38,5 +38,12 @@ public class Kelas {
     public MataKuliah getMataKuliah() {
         return matakuliah;
     }
-    
+
+    public void setJadwal(int jadwal) {
+        this.jadwal = jadwal;
+    }
+
+    public int getJadwal() {
+        return jadwal;
+    }
 }
