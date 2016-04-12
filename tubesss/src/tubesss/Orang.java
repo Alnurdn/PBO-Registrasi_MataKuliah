@@ -10,10 +10,10 @@ package tubesss;
  * @author ANZYM
  */
 public abstract class Orang {
-   private String nama;
-   private int id;
+   String nama;
+   String id;
    
-   public Orang (String nama, int id) {
+   public Orang (String nama, String id) {
        this.nama = nama;
        this.id = id;
    }
@@ -22,11 +22,11 @@ public abstract class Orang {
        this.nama = nama;
    }
    
-   public void setId (int id) {
+   public void setId (String id) {
        this.id = id;
    }
    
-   public int getId () {
+   public String getId () {
        return id;
    }
    
