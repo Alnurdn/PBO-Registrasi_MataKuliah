@@ -10,26 +10,27 @@ package tubesss;
  * @author ANZYM
  */
 public class Dosen extends Orang {
-    private String namaDosen;
-    private int idDosen;
+
     
-    public Dosen (String nama, int id) {
+    public Dosen (String nama, String id) {
         super(nama,id);
     }
 
-    public void setNamaDosen (String namaDosen) {
-        this.namaDosen = namaDosen;
+    public void setNama (String nama) {
+        this.nama = nama;
     }
     
-    public void setIdDosen (int idDosen) {
-        this.idDosen = idDosen;
+    @Override
+    public void setId (String id) {
+        this.id = id;
     }
     
-    public String getNamaDosen () {
-        return namaDosen;
+    @Override
+    public String getNama () {
+        return nama;
     }
     
-    public int getIdDosen () {
-        return idDosen;
+    public String getId () {
+        return id;
     }
 }
