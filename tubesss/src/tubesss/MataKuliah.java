@@ -11,23 +11,24 @@ package tubesss;
  */
 public class MataKuliah {
     private String namaMK;
-    private String jadwal;
+    private int sks;
+    protected int maxMk = 10;
     
-    public MataKuliah (String namaMK, String jadwal) {
+    public MataKuliah (String namaMK, int sks) {
         this.namaMK = namaMK;
-        this.jadwal = jadwal;
+        this.sks = sks;
     }
     
     public void setNamaMK (String namaMK) {
         this.namaMK = namaMK;
     }
     
-    public void setJadwal (String jadwal) {
-        this.jadwal = jadwal;
+    public void setSks (int sks) {
+        this.sks = sks;
     }
     
-    public String getJadwal() {
-        return jadwal;
+    public int getSks() {
+        return sks;
     }
     
     public String getNamaMK() {
