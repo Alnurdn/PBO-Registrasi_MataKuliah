@@ -19,6 +19,10 @@ public class MataKuliah {
         this.sks = sks;
     }
     
+    public MataKuliah (String namaMK) {
+        this.namaMK = namaMK;
+    }
+            
     public void setNamaMK (String namaMK) {
         this.namaMK = namaMK;
     }
